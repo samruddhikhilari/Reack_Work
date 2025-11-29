@@ -1,0 +1,136 @@
+import { useState } from "react";
+import "./App.css"
+import Card from "./components/Card";
+
+const App = () => {
+   const [data, setData] = useState([
+  {
+    name: "company name",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "posted time",
+    heading: "job heading",
+    jobType: "job type",
+    jobLevel: "job level",
+    jobDesc: "Lorem ipsum officiis, ad molestiae beatae sit quisquam iste asperiores, laboriosam, minima impedit doloribus nam vel. Cumque deserunt, nihil repellat quam cum totam blanditiis.",
+    salary: "4/hr",
+    jobLocation: "job location",
+  },
+  {
+    name: "TechNova Solutions",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "2 hours ago",
+    heading: "Frontend Developer",
+    jobType: "Full-time",
+    jobLevel: "Mid-level",
+    jobDesc: "We are looking for a Frontend Developer to build responsive and accessible web applications using React and modern CSS. You will work closely with designers and backend engineers to deliver high-quality user experiences.",
+    salary: "₹8 LPA",
+    jobLocation: "Bangalore, India",
+  },
+  {
+    name: "DataMind Analytics",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "4 hours ago",
+    heading: "Data Scientist",
+    jobType: "Full-time",
+    jobLevel: "Senior",
+    jobDesc: "Join our data science team to build ML models, analyze large datasets, and provide actionable insights. Strong Python, SQL, and experience with PyTorch/TensorFlow required.",
+    salary: "₹15 LPA",
+    jobLocation: "Hyderabad, India",
+  },
+  {
+    name: "CloudScale Systems",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "6 hours ago",
+    heading: "DevOps Engineer",
+    jobType: "Full-time",
+    jobLevel: "Mid-level",
+    jobDesc: "Design, deploy, and maintain cloud infrastructure on AWS/GCP. Automate CI/CD pipelines, monitor systems, and ensure high availability and security of our services.",
+    salary: "₹12 LPA",
+    jobLocation: "Remote",
+  },
+  {
+    name: "FinEdge Technologies",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "1 day ago",
+    heading: "Backend Developer",
+    jobType: "Full-time",
+    jobLevel: "Junior",
+    jobDesc: "Develop and maintain scalable backend services using Node.js/Express or Python/Django. Work on APIs, databases, and integrations with third-party services.",
+    salary: "₹6 LPA",
+    jobLocation: "Pune, India",
+  },
+  {
+    name: "DesignCraft Studio",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "1 day ago",
+    heading: "UI/UX Designer",
+    jobType: "Full-time",
+    jobLevel: "Mid-level",
+    jobDesc: "Create intuitive and beautiful user interfaces for web and mobile apps. Collaborate with product and engineering teams to turn user needs into high-fidelity designs and prototypes.",
+    salary: "₹9 LPA",
+    jobLocation: "Mumbai, India",
+  },
+  {
+    name: "SecureNet Systems",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "2 days ago",
+    heading: "Cybersecurity Analyst",
+    jobType: "Full-time",
+    jobLevel: "Senior",
+    jobDesc: "Monitor and protect our systems from threats, perform vulnerability assessments, and respond to security incidents. Experience with SIEM, firewalls, and compliance frameworks is a must.",
+    salary: "₹14 LPA",
+    jobLocation: "Chennai, India",
+  },
+  {
+    name: "GreenFuture Energy",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "2 days ago",
+    heading: "Renewable Energy Engineer",
+    jobType: "Full-time",
+    jobLevel: "Mid-level",
+    jobDesc: "Design and optimize solar/wind energy systems. Conduct site assessments, prepare technical reports, and support project implementation and maintenance.",
+    salary: "₹10 LPA",
+    jobLocation: "Ahmedabad, India",
+  },
+  {
+    name: "HealthTrack MedTech",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "3 days ago",
+    heading: "Product Manager",
+    jobType: "Full-time",
+    jobLevel: "Senior",
+    jobDesc: "Lead the product lifecycle for our healthcare SaaS platform. Define roadmap, prioritize features, and work with engineering, design, and sales to deliver value to customers.",
+    salary: "₹18 LPA",
+    jobLocation: "Remote",
+  },
+  {
+    name: "EduSpark Learning",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "3 days ago",
+    heading: "Content Writer (EdTech)",
+    jobType: "Part-time",
+    jobLevel: "Entry-level",
+    jobDesc: "Create engaging educational content, course materials, and blog posts for K–12 and higher education. Strong writing skills and subject knowledge in Math/Science preferred.",
+    salary: "₹300/hr",
+    jobLocation: "Remote",
+  },
+  {
+    name: "LogiChain Solutions",
+    img: "https://i.pinimg.com/736x/00/42/85/0042852593e4d363f5cf9912ced99f90.jpg",
+    posted: "4 days ago",
+    heading: "Supply Chain Analyst",
+    jobType: "Full-time",
+    jobLevel: "Mid-level",
+    jobDesc: "Analyze logistics data, optimize inventory and transportation, and support decision-making for our supply chain operations. Proficiency in Excel and SQL is required.",
+    salary: "₹7.5 LPA",
+    jobLocation: "Delhi, India",
+  },
+]);
+  return (
+   <>
+   <Card data={data}></Card>
+   </>
+  )
+}
+
+export default App
